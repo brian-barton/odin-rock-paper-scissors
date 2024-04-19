@@ -1,8 +1,6 @@
-# odin-rock-paper-scissors
+# Rock Paper Scissors Game
 
-Rock Paper Scissors project for The Odin Project's foundations course.
-
-In this project I will be creating a Rock Paper Scissors game with a total of five rounds, using JavaScript. It will be played from the console against the computer. There will be a prompt dialog box, where the player will enter their selection of either 'Rock, 'Paper', or 'Scissors' The computer will then return randomly 'Rock, 'Paper', or 'Scissors'. Depending on the selections of the two players there will be a console message stating which one won the round.
+In this project I have created a Rock Paper Scissors game that has a total of five rounds and is played against the computer from the console. The round starts with the player entering their selection into a prompt dialog box. The computer randomly produces it's selection through a function. Then there is another function that compares the two selections and determines who won the round or if it was a tie. That function then console logs the player and computers selection for the round played. After that function is another one that takes the previous function and loops it to play five rounds. Within this function is a system created to keep the score for each round and console logs the result of the round played with string stating if the player won, lost or tied with the computer. 
 
 A few of the skills I plan to demonstrate are:
 
