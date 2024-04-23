@@ -42,38 +42,31 @@ function playGame(rounds = 5) {
       case "You Lose! Paper beats Rock!":
         console.log("You Lose! Paper beats Rock!");
         computerScore++;
-        console.log("Player: " + playerScore + " Computer: " + computerScore);
         break;
       case "You Win! Paper beats Rock!":
         console.log("You Win! Paper beats Rock!");
         playerScore++;
-        console.log("Player: " + playerScore + " Computer: " + computerScore);
         break;
       case "You Win! Rock beats Scissors!":
         console.log("You Win! Rock beats Scissors!");
         playerScore++;
-        console.log("Player: " + playerScore + " Computer: " + computerScore);
         break;
       case "You Lose! Rock beats Scissors!":
         console.log("You Lose! Rock beats Scissors!");
         computerScore++;
-        console.log("Player: " + playerScore + " Computer: " + computerScore);
         break;
       case "You Lose! Scissors beats Paper!":
         console.log("You Lose! Scissors beats Paper!");
         computerScore++;
-        console.log("Player: " + playerScore + " Computer: " + computerScore);
         break;
       case "You Win! Scissors beats Paper!":
         console.log("You Win! Scissors beats Paper!");
         playerScore++;
-        console.log("Player: " + playerScore + " Computer: " + computerScore);
         break;
       case "No one wins! It's a tie!":
         console.log("No one wins! It's a tie!");
         computerScore++;
         playerScore++;
-        console.log("Player: " + playerScore + " Computer: " + computerScore);
         break;
     }
   }
@@ -88,3 +81,14 @@ function playGame(rounds = 5) {
 }
 
 playGame();
+
+// prompts a message to play again if ok is the console is cleared and it calls the previous function playGame
+function playAgain() {
+  if (confirm("Play Again?")) {
+    console.clear();
+    playGame();
+  } else {
+  }
+}
+
+playAgain();
