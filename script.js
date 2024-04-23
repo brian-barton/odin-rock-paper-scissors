@@ -13,15 +13,30 @@ function playRound(playerSelection, computerSelection) {
   console.log("Computers selection: " + computerSelection.toUpperCase());
   if (playerSelection.toLowerCase() == "rock" && computerSelection == "paper") {
     return "You Lose! Paper beats Rock!";
-  } else if (playerSelection.toLowerCase() == "paper" && computerSelection == "rock") {
+  } else if (
+    playerSelection.toLowerCase() == "paper" &&
+    computerSelection == "rock"
+  ) {
     return "You Win! Paper beats Rock!";
-  } else if (playerSelection.toLowerCase() == "rock" && computerSelection == "scissors") {
+  } else if (
+    playerSelection.toLowerCase() == "rock" &&
+    computerSelection == "scissors"
+  ) {
     return "You Win! Rock beats Scissors!";
-  } else if (playerSelection.toLowerCase() == "scissors" && computerSelection == "rock") {
+  } else if (
+    playerSelection.toLowerCase() == "scissors" &&
+    computerSelection == "rock"
+  ) {
     return "You Lose! Rock beats Scissors!";
-  } else if (playerSelection.toLowerCase() == "paper" && computerSelection == "scissors") {
+  } else if (
+    playerSelection.toLowerCase() == "paper" &&
+    computerSelection == "scissors"
+  ) {
     return "You Lose! Scissors beats Paper!";
-  } else if (playerSelection.toLowerCase() == "scissors" && computerSelection == "paper") {
+  } else if (
+    playerSelection.toLowerCase() == "scissors" &&
+    computerSelection == "paper"
+  ) {
     return "You Win! Scissors beats Paper!";
   } else if (playerSelection.toLowerCase() == computerSelection) {
     return "No one wins! It's a tie!";
@@ -70,7 +85,9 @@ function playGame(rounds = 5) {
         break;
     }
   }
-  console.log("Final Results: Player: " + playerScore + " Computer: " + computerScore);
+  console.log(
+    "Final Results: Player: " + playerScore + " Computer: " + computerScore
+  );
   if (playerScore > computerScore) {
     console.log("Congratulations! You won!");
   } else if (playerScore < computerScore) {
@@ -82,7 +99,7 @@ function playGame(rounds = 5) {
 
 playGame();
 
-// prompts a message to play again if ok is the console is cleared and it calls the previous function playGame
+// prompts a message to play again if "ok" is selected, the console is cleared and it calls the previous function playGame
 function playAgain() {
   if (confirm("Play Again?")) {
     console.clear();
